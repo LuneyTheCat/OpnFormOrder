@@ -1,0 +1,4 @@
+// New migration file
+Schema::table('questions', function (Blueprint $table) {
+    $table->decimal('price', 8, 2)->nullable()->after('required');
+});
